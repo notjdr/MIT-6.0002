@@ -11,8 +11,9 @@ import time
 # Part A: Transporting Space Cows
 #================================
 
+
 # Problem 1
-def load_cows(filename):
+def load_cows():
     """
     Read the contents of the given file.  Assumes the file contents contain
     data in the form of comma-separated cow name, weight pairs, and return a
@@ -24,12 +25,18 @@ def load_cows(filename):
     Returns:
     a dictionary of cow name (string), weight (int) pairs
     """
-    # TODO: Your code here
-    path = '/home/notjdr/homeworks/6.0002/L1/PS1/ps1_cow_data.txt'
-    file = open(path, 'r')
-    lst_pre = file.readlines() 
-    lst_names = [x.split() for x in range(len(lst_pre))]
-    pass
+    path = 'ps1_cow_data.txt'
+    file = open(path, 'r')  
+    lst_pre = file.readlines() # output. ['Maggie,3\n', 'Herman,7\n', 'Betsy,9\n', 'Oreo,6\n', 'Moo Moo,3\n', 'Milkshake,2\n', 'Millie,5\n', 'Lola,2\n', 'Florence,2\n', 'Henrietta,9']
+
+    lst_post = [lst_pre[x].split(",") for x in range(len(lst_pre))]
+    lst_names = [lst_pre[x][ 0 : lst_pre[x].index(",")] for x in range(10)] # output. ['Maggie','Herman','Betsy','Oreo','Moo Moo','Milkshake','Millie','Lola','Florence','Henrietta']
+    lst_values = [int(lst_post[x][1].replace('\n','')) for x in range(10)]
+    
+    dict_both = dict(zip(lst_names, lst_values)) 
+    # output. [['Maggie': 3], ['Herman': 7], ...]. # NOTE: ensure that names are string's and values are int's.
+    
+    return dict_both
 
 # Problem 2
 def greedy_cow_transport(cows,limit=10):
@@ -98,3 +105,7 @@ def compare_cow_transport_algorithms():
     """
     # TODO: Your code here
     pass
+
+
+if __name__ == '__main__':
+    print(f"dictionary from load_cows = {load_cows()}")
