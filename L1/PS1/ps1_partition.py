@@ -1,8 +1,10 @@
 # From codereview.stackexchange.com                    
 def partitions(set_):
+    
     if not set_:
         yield []
         return
+    
     for i in range(2**len(set_)//2):
         parts = [set(), set()]
         for item in set_:
