@@ -14,26 +14,24 @@ class Food(object):
         return f"{self.name} : <{str(self.value)}, {str(self.calories)}>"
 
 def buildMenu(names, values, calories):
-    """names, values, calories lists of same length.
-       name a list of strings
-       values and calories lists of numbers
-       returns list of Foods"""
+    """names, values, calories lists of same length. name a list of strings values and calories lists of numbers. returns list of Foods
+    """
     menu = []
     
     for i in range(len(values)):
         menu.append(Food(names[i], values[i], calories[i]))
-   
-    return menu
+    
+    return menu # NOTE: this is a fake menu -- such that it doesn't contain the actual data but rather calls from Food()
 
-def greedy(items, maxCost, keyFunction):
-    """Assumes items a list, maxCost >= 0,
-         keyFunction maps elements of items to numbers"""
+def greedy(items, maxUnits, keyFunction):
+    """Assumes items a list, maxUnits >= 0, keyFunction maps elements of items to numbers
+    """
     itemsCopy = sorted(items, key=keyFunction, reverse=True)
     result = []
     totalValue, totalCost = 0.0, 0.0
     
     for i in range(len(itemsCopy)):
-        if (totalCost+itemsCopy[i].getCost()) <= maxCost:
+        if (totalCost+itemsCopy[i].getCost()) <= maxUnits:
             result.append(itemsCopy[i])
             totalCost += itemsCopy[i].getCost()
             totalValue += itemsCopy[i].getValue()
@@ -70,4 +68,5 @@ names = ['wine', 'beer', 'pizza', 'burger', 'fries', 'cola', 'apple', 'donut', '
 values = [89,90,95,100,90,79,50,10]
 calories = [123,154,258,354,365,150,95,195]
 foods = buildMenu(names, values, calories)
-testGreedys(foods, 1000)
+testGreedys(foods, maxUnits=1000)
+ 

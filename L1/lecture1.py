@@ -40,12 +40,16 @@ def greedy(items, maxCost, keyFunction):
     return (result, totalValue)
 
 def testGreedy(items, constraint, keyFunction):
+    """
+    """
     taken, val = greedy(items, constraint, keyFunction)
     print('Total value of items taken =', val)
     for item in taken:
         print('   ', item)
 
 def testGreedys(foods, maxUnits):
+    """tests the different variations of Greedy -- by calories, cost, density
+    """
     print('Use greedy by value to allocate', maxUnits,
           'calories')
     testGreedy(foods, maxUnits, Food.getValue)
