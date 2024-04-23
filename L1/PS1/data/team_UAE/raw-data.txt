@@ -1,60 +1,149 @@
     JOÃO ALMEIDA
-    PORTUGAL  
+    PORTUGAL
+    1.78
+    63
+
     IGOR ARRIETA
     SPAIN  
+    1.82
+    64
+    
     JUAN AYUSO
     SPAIN  
+    1.83
+    65
+    
     FILIPPO BARONCINI
     ITALY  
+    1.88
+    74
+
     SJOERD BAX
     NETHERLANDS  
+    1.85
+    78
+
     MIKKEL BJERG
     DENMARK  
+    1.91
+    78
+
     JAN CHRISTEN
     SWITZERLAND  
+    1.85
+    60
+    
     ALESSANDRO COVI
     ITALY  
+    1.80
+    66
+
     ISAAC DEL TORO
     MEXICO  
+    1.80
+    NAN
+
     FINN FISHER BLACK
     NEW ZEALAND  
+    1.89
+    73
+
     FELIX GROSSSCHARTNER
     AUSTRIA  
+    1.84
+    64
+
     MARC HIRSCHI
     SWITZERLAND  
+    1.74
+    61
+
     ÁLVARO HODEG
     COLOMBIA  
+    1.86
+    76
+
     VEGARD STAKE LAENGEN
     NORWAY  
+    1.95
+    79
+
     RAFAŁ MAJKA
     POLAND  
+    1.73
+    62
+
     BRANDON MCNULTY
     USA  
+    1.83
+    69
+    
     SEBASTIAN MOLANO
     COLOMBIA  
+    1.80
+    72
+
     ANTÓNIO MORGADO
     PORTUGAL  
+    1.80
+    71
+
     DOMEN NOVAK
     SLOVENIA  
+    1.81
+    70
+
     IVO OLIVEIRA
     PORTUGAL  
+    1.85
+    68
+
     RUI OLIVEIRA
     PORTUGAL  
+    1.83
+    66
+
     TADEJ POGAČAR
     SLOVENIA  
+    1.76
+    66
+
     NILS POLITT
     GERMANY  
+    1.92
+    80
+
     PAVEL SIVAKOV
     FRANCE  
+    1.88
+    70
+
     MARC SOLER
     SPAIN  
+    1.86
+    68
+
     DIEGO ULISSI
     ITALY  
+    1.75
+    63
+
     JAY VINE
     AUSTRALIA  
+    1.84
+    69
+
     MICHAEL VINK
     NEW ZEALAND  
+    1.90
+    73
+
     TIM WELLENS
     BELGIUM  
+    1.82
+    71
+
     ADAM YATES
     UNITED KINGDOM  
+    1.73
+    58
