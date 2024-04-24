@@ -9,6 +9,7 @@ athelete_country = 'PORTUGAL'
 athlete_height = 1.78
 athlete_weight = 63
 
+
 INSERT_QUERY = f"INSERT INTO UAE VALUES ('{athelete_name}','{athelete_country}','{athlete_height}','{athlete_weight}')"
 cursor.execute(INSERT_QUERY)
 
